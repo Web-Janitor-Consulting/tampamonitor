@@ -1,0 +1,219 @@
+/*
+Theme Name: Tampa Monitor 2023
+Theme URI: https://tampanmonitor.com
+Description: A Twentytwentytwp child theme for the Tampa Monitor
+Author: Michael Bishop
+Author URI: https://webjanitor.consulting
+Template: twentytwentytwp
+Version: 0.0.1
+License: MIT License
+License URI: https://opensource.org/licenses/MIT
+*/
+
+/* The PostCSS plugin is set to read from /assets/css */
+@import 'variables.css';
+@import 'fonts.css';
+
+a:link, a:hover, a:active, a:visited {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.15em;
+}
+
+
+body {
+    font-size: clamp(1rem, 1.3rem, 21px);
+}
+
+/* Main column width */
+.wp-block {
+    --responsive--aligndefault-width: 960px;
+
+}
+
+.site {
+    max-width: 1440px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-navigation {
+    margin-top: 0;
+    font-family: 'Action Text Bright Web';
+}
+.footer-navigation,
+.footer-navigation ul {
+    font-family: var(--primary-nav--font-family);
+}
+.footer-navigation ul {
+  letter-spacing: .03em;
+}
+
+/* Header Image Filter */
+
+.hero-image {
+    position: relative;
+}
+
+/* .hero-image:before {
+    content: "";
+    display: block;
+    height: 50%;
+    width: 40%;
+    top: 50%;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    mix-blend-mode: color-dodge;
+    opacity: 0.2;
+} */
+
+/* .hero-image:after{
+    content: "";
+    display: block;
+    height: 50%;
+    width: 33%;
+    top: 0;
+    left: 40%;
+    position: absolute;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+} */
+
+.home .hero-image {
+  width: 99vw;
+  height: 475px;
+  background-image: url('/wp-content/uploads/2022/02/PMO_10-bx-scaled-1.jpg');
+  /* background-image: url('http://127.0.0.1/wp-content/themes/blackswan2022/assets/images/PMO_10-b-scaled.jpg'); */
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+.footer-navigation-wrapper li a {
+  transition: none;
+}
+
+
+/* Jammed in from browser editing */
+
+.blog .entry-header h2 {
+  font-size: clamp(2.1rem,var(--global--font-size-page-title),2.66rem);
+  padding-left: 0;
+}
+
+.blog .entry-content {
+	padding-right: 4rem;
+}
+
+.entry-content, .entry-content .has-background {
+  max-width: 1120px;
+  margin-left: 0;
+}
+
+.entry-title {
+	margin-left: 0;
+}
+
+.entry-title.default-max-width {
+	margin-left: 0;
+}
+
+.entry-footer.default-max-width {
+	max-width: 90%;
+	margin-left: 0;
+}
+
+.has-background .wp-block-columns .wp-block-column figure.wp-block-image img,
+.wp-block-columns .wp-block-column .wp-block-image figure img {
+  border-radius: 5px;
+}
+
+.singular .has-post-thumbnail .entry-header {
+  padding-bottom: 0;
+}
+
+.home header#masthead.site-header {
+  padding-bottom: 2em;
+}
+
+header#masthead.site-header {
+  padding-bottom: 1em;
+}
+
+.type-post header h2.entry-title {
+  font-weight: 600;
+}
+
+.post footer,
+.entry-footer.default-max-width,
+.post .entry-content,
+.post .entry-header {
+  max-width: 900px;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.home article .entry-content {
+  margin-top: 40px;
+}
+
+.home article .entry-content .has-background {
+  padding-top: 40px;
+}
+
+nav#site-navigation.primary-navigation .menu-button-container {
+  padding-top: 1rem;
+  padding-right: .5rem;
+}
+
+.type-page .entry-content .has-background .wp-block-columns .wp-block-column .wp-block-image {
+  display: flex;
+}
+
+footer#colophon {
+  padding-bottom: 0;
+}
+
+footer#colophon.site-footer .copyright {
+  font-weight: 480;
+  letter-spacing: .0125em;
+}
+
+h1.entry-title {
+  font-weight: 400;
+}
+
+.home header h1 {
+  margin-bottom: 3em;
+}
+
+header h1 .rotate span em {
+  background-color: rgb(207, 233, 242);
+  border-radius: .5rem;
+  font-weight: 560;
+  padding-bottom: .25rem;
+  padding-right: 1rem;
+  color: rgb(41, 44, 49);
+  font-style: normal;
+}
+
+button#primary-mobile-menu.button {
+  font-weight: 590;
+}
+
+nav.navigation.post-navigation .nav-links a:link,
+nav.navigation.post-navigation .nav-links a:hover,
+nav.navigation.post-navigation .nav-links a:active,
+nav.navigation.post-navigation .nav-links a:visited {
+  text-decoration:underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.125em;
+}

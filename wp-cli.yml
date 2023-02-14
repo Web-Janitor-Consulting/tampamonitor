@@ -1,0 +1,34 @@
+# Global parameter defaults
+path: wp-app
+disabled_commands:
+  - db drop
+  - plugin install
+
+
+# Subcommand defaults (e.g. `wp config create`)
+config create:
+    dbuser: root
+    dbpass: 
+    extra-php: |
+        define( 'WP_DEBUG', true );
+
+# Aliases to other WordPress installs (e.g. `wp @staging rewrite flush`)
+# An alias can include 'user', 'url', 'path', 'ssh', or 'http'
+@dev:
+    ssh: 
+    path: 
+@local:
+    ssh: docker-compose
+
+# Aliases can reference other aliases to create alias groups
+# Alias groups can be nested
+@both:
+ - @dev
+ - @local
+
+# '_' is a special value denoting configuration options for this wp-cli.yml
+_:
+    # Merge subcommand defaults from the upstream config.yml, instead of overriding
+    merge: true
+    # Inherit configuration from an arbitrary YAML file
+    inherit: prod.yml

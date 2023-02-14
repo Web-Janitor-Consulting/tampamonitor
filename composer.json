@@ -1,0 +1,16 @@
+{
+    "name": "Web-Janitor-Consulting/tampamonitor",
+    "type": "project",
+    "license": "MIT",
+    "require-dev": {
+        "automattic/vipwpcs": "*",
+        "dealerdirect/phpcodesniffer-composer-installer": "*",
+        "phpcompatibility/php-compatibility": "*",
+        "wp-coding-standards/wpcs": "*"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}

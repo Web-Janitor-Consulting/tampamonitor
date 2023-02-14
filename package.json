@@ -1,0 +1,27 @@
+{
+    "name": "blackswan-pharma.com",
+    "version": "0.0.1",
+    "description": "",
+    "main": "postcss.config.js",
+    "scripts": {
+        "start": "postcss style.css -w -m -o min.bswan-style.css",
+        "build": "postcss style.css -m -o min.bswan-style.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:Web-Janitor-Consulting/tampamonitor.git"
+    },
+    "author": "Michael Bishop",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Web-Janitor-Consulting/tampamonitor/issues"
+    },
+    "homepage": "https://github.com/Web-Janitor-Consulting/tampamonitor#readme",
+    "devDependencies": {
+        "postcss": "^8.4.21",
+        "postcss-cli": "^10.1.0",
+        "postcss-import": "^15.1.0",
+        "postcss-nested": "^6.0.0",
+        "postcss-preset-env": "^8.0.1"
+    }
+}

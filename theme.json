@@ -1,0 +1,41 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "color": {
+            "custom": false,
+            "defaultPalette": false,
+            "defaultGradients": false,
+            "customGradient": false,
+            "link": false,
+            "text": false,
+            "palette": [{
+                    "name": "Light Red",
+                    "slug": "lred",
+                    "color": "#FFEBEB"
+                },
+                {
+                    "name": "BSP Gray",
+                    "slug": "bspgray",
+                    "color": "#292C31"
+                },
+                {
+                    "name": "Light Blue",
+                    "slug": "lblue",
+                    "color": "#E8EFEF"
+                },
+                {
+                    "name": "Tan",
+                    "slug": "tan",
+                    "color": "#FFEDDB"
+                }
+            ]
+        },
+        "typography": {
+            "customFontSize": false
+        },
+        "spacing": {
+            "padding": false
+        }
+    }
+}
