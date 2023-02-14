@@ -4,8 +4,8 @@
     "description": "",
     "main": "postcss.config.js",
     "scripts": {
-        "start": "postcss style.css -w -m -o min.bswan-style.css",
-        "build": "postcss style.css -m -o min.bswan-style.css"
+        "start": "postcss style.css -w -m -o min.main.css",
+        "build": "postcss style.css -m -o min.main.css"
     },
     "repository": {
         "type": "git",
