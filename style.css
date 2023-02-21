@@ -138,3 +138,31 @@ em strong, strong em {
   background-color: var(--global--color-tan);
 }
 
+.mc-subscribe {
+  width: var(--responsive--aligndefault-width);
+  background-color: var(--global--color-tan);
+  padding: 1em;
+}
+
+#mc_embed_signup {
+  width: 45%;
+  margin-left: 30%;
+}
+
+#mc_embed_signup h2 {
+  margin: 0;
+}
+
+
+.loud {
+  font-family: var(--global--font-primary);
+  font-size: var(--global--font-size-xl);
+  color: var(--global--color-blue);
+  text-align: center;
+}
+
+.quiet {
+  font-size: var(--global--font-size-xs);
+  color: var(--global--color-black);
+  text-align: center;
+}
