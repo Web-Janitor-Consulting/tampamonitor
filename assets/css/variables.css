@@ -1,12 +1,28 @@
 :root {
-    /*
-    --responsive--aligndefault-width: 100%;
-    --global--line-height-page-title: 1.2;
-    --heading--font-weight-page-title: 500;
-    --heading--letter-spacing-h2: -0.02rem;
-    --primary-nav--font-size: 1.5rem;
-    --heading--font-size-h2: 1.31rem;
+
+    --global--color-black: #231f20;
+    --global--color-blue: #0e5499;
+    --global--color-green: #085e66;
+    --global--color-red: #990f3d;
+    --global--color-tan: #f2dfce;
+    --global--color-white: #fff0e5;
+    --global--color-primary: var(--global--color-black);
+    --global--color-secondary: var(--global--color-black);
+    --global--color-background: var(--global--color-white);
+    --font-base: "neue-haas-unica", sans-serif;
+   --responsive--aligndefault-width: 960px;
     --wp--typography--line-height: 1.4;
     --global--line-height-body: 1.5;
-    */
+    --heading--font-weight: 300;
+    --heading--font-weight-page-title: 300;
+    --entry--header--color: var(--global-color-primary);
+    --entry-content--font-family: "neue-haas-unica", sans-serif;
+    --entry-header--font-size: var(--global--font-size-xl);
+    --global--font-primary: "monotype-modern-display", sans-serif;
+    --global--font-secondary:  "neue-haas-unica", sans-serif;;
+    --heading-font-family:  var(--global--font-primary);
+
+    --branding--title--text-transform: normal;
+    --branding--title--font-size: 3.5rem;
+    --map-legend-maxheight: 400px;
 }

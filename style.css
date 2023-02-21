@@ -1,11 +1,11 @@
 /*
 Theme Name: Tampa Monitor 2023
 Theme URI: https://tampanmonitor.com
-Description: A Twentytwentytwp child theme for the Tampa Monitor
+Description: A Twentytwentyone child theme for the Tampa Monitor
 Author: Michael Bishop
 Author URI: https://webjanitor.consulting
-Template: twentytwentytwo
-Version: 0.0.1
+Template: twentytwentyone
+Version: 0.1.0
 License: MIT License
 License URI: https://opensource.org/licenses/MIT
 */
@@ -19,201 +19,122 @@ a:link, a:hover, a:active, a:visited {
     text-underline-offset: 0.15em;
 }
 
-
-body {
-    font-size: clamp(1rem, 1.3rem, 21px);
-}
-
-/* Main column width */
-.wp-block {
-    --responsive--aligndefault-width: 960px;
-
-}
-
-.site {
-    max-width: 1440px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.footer-navigation {
-    margin-top: 0;
-    font-family: 'Action Text Bright Web';
-}
-.footer-navigation,
-.footer-navigation ul {
-    font-family: var(--primary-nav--font-family);
-}
-.footer-navigation ul {
-  letter-spacing: .03em;
-}
-
-/* Header Image Filter */
-
-.hero-image {
-    position: relative;
-}
-
-/* .hero-image:before {
-    content: "";
-    display: block;
-    height: 50%;
-    width: 40%;
-    top: 50%;
-    left: 0;
-    position: absolute;
-    pointer-events: none;
-    mix-blend-mode: color-dodge;
-    opacity: 0.2;
-} */
-
-/* .hero-image:after{
-    content: "";
-    display: block;
-    height: 50%;
-    width: 33%;
-    top: 0;
-    left: 40%;
-    position: absolute;
-    pointer-events: none;
-    mix-blend-mode: overlay;
-} */
-
-.home .hero-image {
-  width: 99vw;
-  height: 475px;
-  background-image: url('/wp-content/uploads/2022/02/PMO_10-bx-scaled-1.jpg');
-  /* background-image: url('http://127.0.0.1/wp-content/themes/blackswan2022/assets/images/PMO_10-b-scaled.jpg'); */
-  background-repeat: repeat-y;
-  background-size: cover;
-}
-
-.footer-navigation-wrapper li a {
-  transition: none;
-}
-
-
-/* Jammed in from browser editing */
-
-.blog .entry-header h2 {
-  font-size: clamp(2.1rem,var(--global--font-size-page-title),2.66rem);
-  padding-left: 0;
-}
-
-.blog .entry-content {
-	padding-right: 4rem;
-}
-
-.entry-content, .entry-content .has-background {
-  max-width: 1120px;
-  margin-left: 0;
-}
-
-.entry-title {
-	margin-left: 0;
-}
-
-.entry-title.default-max-width {
-	margin-left: 0;
-}
-
-.entry-footer.default-max-width {
-	max-width: 90%;
-	margin-left: 0;
-}
-
-.has-background .wp-block-columns .wp-block-column figure.wp-block-image img,
-.wp-block-columns .wp-block-column .wp-block-image figure img {
-  border-radius: 5px;
-}
-
-.singular .has-post-thumbnail .entry-header {
-  padding-bottom: 0;
-}
-
-.home header#masthead.site-header {
-  padding-bottom: 2em;
-}
-
-header#masthead.site-header {
-  padding-bottom: 1em;
-}
-
-.type-post header h2.entry-title {
-  font-weight: 600;
-}
-
-.post footer,
-.entry-footer.default-max-width,
-.post .entry-content,
-.post .entry-header {
-  max-width: 900px;
-  margin-right: 0;
-  margin-left: auto;
-}
-
-.home article .entry-content {
-  margin-top: 40px;
-}
-
-.home article .entry-content .has-background {
-  padding-top: 40px;
-}
-
-nav#site-navigation.primary-navigation .menu-button-container {
-  padding-top: 1rem;
-  padding-right: .5rem;
-}
-
-.type-page .entry-content .has-background .wp-block-columns .wp-block-column .wp-block-image {
-  display: flex;
-}
-
-footer#colophon {
-  padding-bottom: 0;
-}
-
-footer#colophon.site-footer .copyright {
-  font-weight: 480;
-  letter-spacing: .0125em;
-}
-
-h1.entry-title {
+em {
+  font-family: "neue-haas-unica", sans-serif;
   font-weight: 400;
+  font-style: italic;
 }
 
-.home header h1 {
-  margin-bottom: 3em;
-}
-
-header h1 .rotate span em {
-  background-color: rgb(207, 233, 242);
-  border-radius: .5rem;
-  font-weight: 560;
-  padding-bottom: .25rem;
-  padding-right: 1rem;
-  color: rgb(41, 44, 49);
+strong {
+  font-family: "neue-haas-unica", sans-serif;
+  font-weight: 700;
   font-style: normal;
 }
 
-button#primary-mobile-menu.button {
-  font-weight: 590;
+em strong, strong em {
+  font-family: "neue-haas-unica", sans-serif;
+  font-weight: 700;
+  font-style: italic;
 }
 
-nav.navigation.post-navigation .nav-links a:link,
-nav.navigation.post-navigation .nav-links a:hover,
-nav.navigation.post-navigation .nav-links a:active,
-nav.navigation.post-navigation .nav-links a:visited {
-  text-decoration:underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 0.125em;
+.site-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
+
+.primary-navigation {
+  margin-left: 0;
+  border-top: 1px solid var(--global--color-black);
+  border-bottom: 1px solid var(--global--color-black);
+  width: 100%;
+}
+
+.primary-navigation > div > .menu-wrapper {
+  justify-content: center;
+}
+
+#map {
+  height: 600px;
+}
+
+.geocoder {
+  width: 75%;
+  }
+
+.mapboxgl-ctrl-geocoder {
+  width: 50%;
+  margin-left: 30%;
+  }
+
+  .mapboxgl-ctrl-legend {
+    maxheight: var(--map-legend-maxheight) !important;
+  }
+
+  @media only screen and (min-width: 600px) { 
+
+    .home .site-main {
+      display: grid;
+      flex-direction: column;
+      grid-template-columns: repeat(3, 30%);
+      justify-content: space-between;
+      width: var(--responsive--aligndefault-width);
+    }
+
+    .home .entry-title {
+      min-height: 120px;
+      margin-top: 0;
+    }
+
+    .home .entry-content {
+      margin: 0 auto;
+    }
+
+    .home .entry-header {
+      margin-bottom: 0;
+    }
+
+    .post-thumbnail .wp-post-image {
+      margin-top: 1.5em;
+    }
+
+    .home .post {
+      margin-top: 0;
+    }
+
+}
+
+
+  .home .site-main > article > .entry-footer {
+    padding-top: 0;
+    border-bottom: none;
+  }
+  
+.home .post-thumbnail img {
+  object-fit: cover;
+}
+
+.entry-title a {
+  text-decoration: none;
+}
+
+.entry-category {
+  min-height: 60px;
+  margin: 0 auto;
+}
+
+.entry-category a {
+  font-size: var(--global--font-size-xs);
+  text-decoration: none;
+  color: var(--global--color-red);
+  text-transform: uppercase;
+}
+
+.has-tertiary-background-color {
+  background-color: var(--global--color-tan);
+}
+
