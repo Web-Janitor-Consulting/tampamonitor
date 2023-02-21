@@ -5,7 +5,7 @@ Description: A Twentytwentyone child theme for the Tampa Monitor
 Author: Michael Bishop
 Author URI: https://webjanitor.consulting
 Template: twentytwentyone
-Version: 0.1.2
+Version: 0.1.3
 License: MIT License
 License URI: https://opensource.org/licenses/MIT
 */
@@ -139,9 +139,10 @@ em strong, strong em {
 }
 
 .mc-subscribe {
-  width: var(--responsive--aligndefault-width);
+  width: 75vw;
   background-color: var(--global--color-tan);
   padding: 1em;
+  margin: 0 auto;
 }
 
 #mc_embed_signup {
