@@ -1,6 +1,6 @@
 {
     "name": "tampamonitor",
-    "version": "0.1.0",
+    "version": "0.1.2",
     "description": "",
     "main": "postcss.config.js",
     "scripts": {
