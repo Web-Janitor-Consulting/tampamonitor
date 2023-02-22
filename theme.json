@@ -10,24 +10,34 @@
             "link": false,
             "text": false,
             "palette": [{
-                    "name": "Light Red",
-                    "slug": "lred",
-                    "color": "#FFEBEB"
+                    "name": "Red",
+                    "slug": "red",
+                    "color": "#990f3d"
                 },
                 {
-                    "name": "BSP Gray",
-                    "slug": "bspgray",
-                    "color": "#292C31"
+                    "name": "Blue",
+                    "slug": "blue",
+                    "color": "#0e5499"
                 },
                 {
-                    "name": "Light Blue",
-                    "slug": "lblue",
-                    "color": "#E8EFEF"
+                    "name": "Green",
+                    "slug": "green",
+                    "color": "#085e66"
+                },
+                {
+                    "name": "Black",
+                    "slug": "black",
+                    "color": "#231f20"
+                },
+                {
+                    "name": "White",
+                    "slug": "white",
+                    "color": "#fff0e5"
                 },
                 {
                     "name": "Tan",
                     "slug": "tan",
-                    "color": "#FFEDDB"
+                    "color": "#f2dfce"
                 }
             ]
         },
