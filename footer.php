@@ -15,6 +15,7 @@
 			</main><!-- #main -->
 		</div><!-- #primary -->
 	</div><!-- #content -->
+	<footer id="colophon" class="site-footer">
 	<div class="mc-subscribe">
 	<p class="loud">Want a weekend wrapup of Tampa City Council in your weekend inbox?
 	</p>
@@ -53,7 +54,7 @@
 </div>
 	<?php get_template_part( 'template-parts/footer/footer-widgets' ); ?>
 
-	<footer id="colophon" class="site-footer">
+
 
 		<?php if ( has_nav_menu( 'footer' ) ) : ?>
 			<nav aria-label="<?php esc_attr_e( 'Secondary menu', 'twentytwentyone' ); ?>" class="footer-navigation">
