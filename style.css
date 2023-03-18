@@ -14,6 +14,10 @@ License URI: https://opensource.org/licenses/MIT
 @import 'variables.css';
 @import 'fonts.css';
 
+button {
+  padding: 0;
+}
+
 a:link, a:hover, a:active, a:visited {
     text-decoration-thickness: 1px;
     text-underline-offset: 0.15em;
@@ -108,6 +112,7 @@ em strong, strong em {
 
   .mapboxgl-popup-close-button {
     outline: none;
+    padding: 0 .4em;
   }
 
   
