@@ -75,6 +75,43 @@ em strong, strong em {
     maxheight: var(--map-legend-maxheight) !important;
   }
 
+  .mapboxgl-control-container {
+    background: none;
+    border: none;
+  }
+
+  .mapboxgl-popup-close-button:hover {
+    background: none;
+    border: none;
+    border-radius: 0;
+  }
+
+  .mapboxgl-popup-close-button:not(:hover):not(:active) {
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+  }
+
+  .mapboxgl-popup-close-button:focus {
+    outline: none;
+  }
+
+  .mapboxgl-popup-content.button:not(:hover):not(:active):not(.has-background), button:not(:hover):not(:active):not(.has-background), input[type=submit]:not(:hover):not(:active):not(.has-background), input[type=reset]:not(:hover):not(:active):not(.has-background), .wp-block-search .wp-block-search__button:not(:hover):not(:active):not(.has-background), .wp-block-button .wp-block-button__link:not(:hover):not(:active):not(.has-background), .wp-block-file a.wp-block-file__button:not(:hover):not(:active):not(.has-background) {
+    background: none;
+    border: none;
+  }
+
+  .site .button:focus, button:focus, input[type=submit]:focus, input[type=reset]:focus, .wp-block-search .wp-block-search__button:focus, .wp-block-button .wp-block-button__link:focus, .wp-block-file a.wp-block-file__button:focus {
+    outline: none;
+  }
+
+  .mapboxgl-popup-close-button {
+    outline: none;
+  }
+
+  
+
   @media only screen and (min-width: 600px) { 
 
     .home .site-main {

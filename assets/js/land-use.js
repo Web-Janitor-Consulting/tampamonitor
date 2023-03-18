@@ -140,6 +140,25 @@ map.on('load', function() {
         'landuse'
     );
 });
+map.on('click', ['current-zoning', 'future-land-use'], (e) => {
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML("Current Zoning: " + e.features[1].properties.ZONECLASS + "<br>Future Land Use: " + e.features[0].properties.UNIQ_VAL)
+        .addTo(map);
+});
+
+// Change the cursor to a pointer when
+// the mouse is over the states layer.
+map.on('mouseenter', 'current-zoning', () => {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change the cursor back to a pointer
+// when it leaves the states layer.
+map.on('mouseleave', 'current-zoning', () => {
+    map.getCanvas().style.cursor = '';
+});
+
 map.addControl(new mapboxgl.NavigationControl(), 'top-right');
 const legend = new LegendControl({
     // Show all properties in selected layers
