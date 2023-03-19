@@ -140,12 +140,45 @@ map.on('load', function() {
         'landuse'
     );
 });
-map.on('click', ['current-zoning', 'future-land-use'], (e) => {
-    new mapboxgl.Popup()
-        .setLngLat(e.lngLat)
-        .setHTML("Current Zoning: " + e.features[1].properties.ZONECLASS + "<br>Future Land Use: " + e.features[0].properties.UNIQ_VAL)
-        .addTo(map);
+// After the last frame rendered before the map enters an "idle" state.
+map.on('idle', () => {
+    // If these two layers were not added to the map, abort
+    if (!map.getLayer('current-zoning') || !map.getLayer('future-land-use')) {
+        return;
+    }
+    // get visible layers
+    function getVisibleLayers() {
+        var layers = map.getStyle().layers;
+        var visibleLayers = [];
+        for (var i = 0; i < layers.length; i++) {
+            if (layers[i].layout && layers[i].layout.visibility === 'visible') {
+                visibleLayers.push(layers[i].id);
+            }
+        }
+        return visibleLayers;
+    }
+
+    //
+    viz = getVisibleLayers();
+    console.log(viz);
+
+
+
+    map.on('click', viz, (e) => {
+        if (viz.hasOwnProperty(0)) {
+            htmlFLU = "Future: " + e.features[0].properties.UNIQ_VAL + "<br/>";
+        }
+        if (viz.hasOwnProperty(1)) {
+            htmlCZ = "Current: " + e.features[1].properties.ZONECLASS;
+        }
+        new mapboxgl.Popup()
+            .setLngLat(e.lngLat)
+            .setHTML(htmlFLU + htmlCZ)
+            .addTo(map);
+    });
+
 });
+
 
 // Change the cursor to a pointer when
 // the mouse is over the states layer.
