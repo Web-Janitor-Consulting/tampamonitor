@@ -18,7 +18,7 @@ map.on('load', function() {
             'id': 'current-zoning',
             'type': 'fill',
             'source': 'current-zoning',
-            "source-layer": "Zoning_District-cutts8",
+            "source-layer": "Zoning_District-2-57li4K",
             'layout': {
                 'visibility': 'visible'
             },
