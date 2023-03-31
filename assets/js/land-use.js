@@ -94,7 +94,7 @@ map.on('load', function() {
             'id': 'future-land-use',
             'type': 'fill',
             'source': 'future-land-use',
-            'source-layer': 'TA_FLU-39ggfd',
+            'source-layer': 'TA_FLU-2-6px7uq',
             'layout': {
                 'visibility': 'visible'
             },
