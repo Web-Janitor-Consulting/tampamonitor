@@ -4,5 +4,8 @@
     .has-tertiary-background-color {
         background-color: var(--global--color-black);
       }
+      .entry-category a {
+        color: var(--global--color-tan);
+      }
 }
 
