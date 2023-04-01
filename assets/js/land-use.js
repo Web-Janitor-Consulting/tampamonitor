@@ -12,7 +12,7 @@ const map = new mapboxgl.Map({
 map.on('load', function() {
     map.addSource('current-zoning', {
         type: 'vector',
-        url: 'mapbox://miklb.3y23ltbc'
+        url: 'mapbox://miklb.3t5787u1'
     });
     map.addLayer({
             'id': 'current-zoning',
@@ -88,7 +88,7 @@ map.on('load', function() {
     );
     map.addSource('future-land-use', {
         type: 'vector',
-        url: 'mapbox://miklb.a2wg4qfw'
+        url: 'mapbox://miklb.ck2d6tn9'
     });
     map.addLayer({
             'id': 'future-land-use',
