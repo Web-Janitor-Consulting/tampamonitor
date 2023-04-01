@@ -1,0 +1,8 @@
+/* Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+    .has-tertiary-background-color {
+        background-color: var(--global--color-black);
+      }
+}
+

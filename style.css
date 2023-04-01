@@ -13,6 +13,7 @@ License URI: https://opensource.org/licenses/MIT
 /* The PostCSS plugin is set to read from /assets/css */
 @import 'variables.css';
 @import 'fonts.css';
+@import 'darkmode.css';
 
 button {
   padding: 0;
@@ -179,11 +180,11 @@ em strong, strong em {
   color: var(--global--color-red);
   text-transform: uppercase;
 }
-
-.has-tertiary-background-color {
-  background-color: var(--global--color-tan);
+@media (prefers-color-scheme: light) {
+  .has-tertiary-background-color {
+    background-color: var(--global--color-tan);
+  }
 }
-
 .mc-subscribe {
   width: 75vw;
   background-color: var(--global--color-tan);
