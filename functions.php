@@ -31,6 +31,13 @@ function tampa_monitor_scripts() {
 			'all'
 		);
 		wp_enqueue_style(
+			'tampa-monitor-style-dark',
+			get_stylesheet_directory_uri() . '/assets/css/darkmode.css',
+			array( 'twenty-twenty-one-style','adobe-fonts' ),
+			null,
+			'all'
+		);
+		wp_enqueue_style(
 			'adobe-fonts',
 			'https://use.typekit.net/qgm8kyl.css',
 			array(),
