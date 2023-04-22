@@ -11,7 +11,8 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Youtube timestamp</p>
+
+<p class="yt-timestamp">Youtube timestamp</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
