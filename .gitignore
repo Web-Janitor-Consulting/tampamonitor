@@ -33,3 +33,6 @@ wp-app
 *.log
 *.sql
 *.sqlite
+
+_site
+
