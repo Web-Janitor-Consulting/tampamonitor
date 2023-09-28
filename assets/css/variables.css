@@ -12,6 +12,7 @@
     --font-base: "neue-haas-unica", sans-serif;
    --responsive--aligndefault-width: 960px;
     --wp--typography--line-height: 1.4;
+    --wp--style--color--link: var(--global--color-blue);
     --global--line-height-body: 1.5;
     --heading--font-weight: 300;
     --heading--font-weight-page-title: 300;
