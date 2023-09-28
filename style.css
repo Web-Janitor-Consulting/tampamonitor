@@ -231,3 +231,7 @@ em strong, strong em {
 .wp-block-group > * + * {
     margin-block-start: var(--flow-space, 1em);
   }
+
+  .is-dark-theme.is-dark-theme {
+    --global--color-primary: var(--global--color-black);
+  }

@@ -9,3 +9,7 @@
       }
 }
 
+.is-dark-theme.is-dark-theme {
+  --global--color-primary: var(--global--color-black) !important;
+}
+
