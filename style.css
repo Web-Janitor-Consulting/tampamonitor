@@ -13,6 +13,7 @@ License URI: https://opensource.org/licenses/MIT
 /* The PostCSS plugin is set to read from /assets/css */
 @import 'variables.css';
 @import 'fonts.css';
+@import 'darkmode.css';
 
 button {
   padding: 0;
