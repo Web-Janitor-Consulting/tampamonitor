@@ -1,4 +1,4 @@
-mapboxgl.accessToken = 'pk.eyJ1IjoibWlrbGIiLCJhIjoiY2xkeHpjbnM0MGx6ajNvcDczM3poMmF4NiJ9.LEHFbNuBQCkqJ2m1sniQKA';
+mapboxgl.accessToken = 'pk.eyJ1IjoibWlrbGIiLCJhIjoiY2xlN2tlMmc2MDZoajN1bWh4dWpqem13cyJ9.FEJUgzg6dnwJZjFB_Wuviw';
 const map = new mapboxgl.Map({
     container: 'map', // container id
     style: `mapbox://styles/miklb/cl9llj1he000014mzuqy5q2kk`, // style URL
@@ -12,13 +12,13 @@ const map = new mapboxgl.Map({
 map.on('load', function() {
     map.addSource('current-zoning', {
         type: 'vector',
-        url: 'mapbox://miklb.3t5787u1'
+        url: 'mapbox://miklb.2m3kkh2c'
     });
     map.addLayer({
             'id': 'current-zoning',
             'type': 'fill',
             'source': 'current-zoning',
-            "source-layer": "Zoning_District-2-57li4k",
+            "source-layer": "Zoning_District-12-23-d0x6f8",
             'layout': {
                 'visibility': 'visible'
             },
@@ -88,13 +88,13 @@ map.on('load', function() {
     );
     map.addSource('future-land-use', {
         type: 'vector',
-        url: 'mapbox://miklb.ck2d6tn9'
+        url: 'mapbox://miklb.96dmhql3'
     });
     map.addLayer({
             'id': 'future-land-use',
             'type': 'fill',
             'source': 'future-land-use',
-            'source-layer': 'TA_FLU-2-6px7uq',
+            'source-layer': 'TPA_FLU_Shapefiles-74qg0b',
             'layout': {
                 'visibility': 'visible'
             },
